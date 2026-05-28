@@ -1,0 +1,50 @@
+# ── Entorno ──────────────────────────────────────────────────────────────────
+.env
+.env.backup
+.env.production
+
+# ── Dependencias ─────────────────────────────────────────────────────────────
+/vendor/
+/node_modules/
+
+# ── Storage (documentos subidos, PDFs firmados, logs) ────────────────────────
+/storage/app/documentos/
+/storage/app/public/
+/storage/logs/
+/storage/*.key
+
+# Conservar la estructura del directorio en Git
+!/storage/app/documentos/.gitkeep
+!/storage/app/public/.gitkeep
+!/storage/logs/.gitkeep
+
+# ── Cache de Laravel ──────────────────────────────────────────────────────────
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitkeep
+
+# ── Swagger generado (se regenera con php artisan l5-swagger:generate) ────────
+/storage/api-docs/
+
+# ── Build de assets ───────────────────────────────────────────────────────────
+/public/hot
+/public/storage
+/public/build
+
+# ── IDE y editores ────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# ── PHP ───────────────────────────────────────────────────────────────────────
+*.log
+*.cache
+
+# ── Tests ─────────────────────────────────────────────────────────────────────
+/.phpunit.cache
+/coverage/
+
+# ── Composer ──────────────────────────────────────────────────────────────────
+composer.phar
